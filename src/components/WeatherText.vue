@@ -2,8 +2,8 @@
   <div>
     <h3><button @click="changeday(when.index - 1)">&lt;</button>
     各城市天氣預報
-        <button @click="changeday(when.index + 1)">&gt;</button></h3>
-            <input type="text" v-model="city" @keyup.enter="consl" placeholder="Search">
+    <button @click="changeday(when.index + 1)">&gt;</button></h3>
+    <input type="text" v-model="city" @keyup.enter="consl" placeholder="Search">
 
     <br><br>
     <div class="weatherdiv" v-for="(data, idx) in getdatalist" :key="idx" v-bind:class="bgfn(idx,when.index)">
